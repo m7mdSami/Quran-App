@@ -1,6 +1,6 @@
 # Quran app
 
-> weather app with ionic 3
+> Quran app with ionic 3
 
 ## Build Setup
 
