@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>تطبيق قرآنى</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="main">
+
+  <ion-list inset>
+    <ion-input type="text" class="searchbar-input" placeholder="ابحث باسم السورة" [(ngModel)]='listFilter'></ion-input>
+
+    <button ion-item *ngFor="let sure of qurans | QuranFilter:listFilter" (click)="gotosure(sure)">
+      {{sure.name}}
+    </button>
+  </ion-list>
+</ion-content>
+
+

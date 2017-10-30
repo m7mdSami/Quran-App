@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     سورة {{ sure.name }}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="bismillah" *ngFor="let e of sure.aya">
+       {{e.bismillah}}
+    </div>
+    <span class="aya" *ngFor="let e of sure.aya">
+        {{e.text}}  <span class="number"> {{e.index}} </span>
+    </span>
+</ion-content>

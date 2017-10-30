@@ -1,0 +1,84 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@font-face{font-family:"JF Flat Regular";src:url('JF-Flat-regular.eot');src:url('JF-Flat-regular.eot?#iefix') format('embedded-opentype'),url('JF-Flat-regular.svg#JF Flat Regular') format('svg'),url('font/JF-Flat-regular.woff') format('woff'),url('font/JF-Flat-regular.ttf') format('truetype');font-weight:normal;font-style:normal;}html{font-family:'JF Flat Regular',sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+
+@font-face{font-family:"HelveticaNeueLight";src:url("#{$ionicons-font-path}/HelveticaNeueW23forSKY-Lig_T02.eot");src:url("#{$ionicons-font-path}/HelveticaNeueW23forSKY-Lig_T02.eot?#iefix") format("embedded-opentype"), url("#{$ionicons-font-path}/HelveticaNeueW23forSKY-Lig_T02.woff") format("woff"), url("#{$ionicons-font-path}/HelveticaNeueW23forSKY-Lig_T02.ttf") format("truetype"), url("#{$ionicons-font-path}/HelveticaNeueW23forSKY-Lig_T02.svg#HelveticaNeueW23forSKY-Lig_T02") format("svg");font-weight:400;font-style:normal;}
+
+.main{
+    background: #333b5b;
+    color:#ffffff
+}
+
+div ,
+h1 ,
+.toolbar-title-md,
+.tab-button-text
+ {
+
+  font-family: 'HelveticaNeueLight',sans-serif !important
+}
+.number{
+    position: relative;
+    color: #2196f3
+}
+.number:before{
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 6px
+}
+.number:after{
+    background: rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 6px
+}
+.bismillah{
+    text-align: center;
+    margin-bottom: 20px
+}
+.aya{
+  line-height: 30px
+}
+ion-input input{
+  padding: 6px 55px !important;
+    height: auto;
+    border-radius: 2px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #141414;
+    background-color: #fff;
+    background-position: 8px center;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.text-input-md{
+    background-color: #fff;
+}
+/*
+'JF Flat Regular',sans-serif
+*/
